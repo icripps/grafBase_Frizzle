@@ -27,7 +27,7 @@ const Project = g.model('Project', {
   rules.private().create().delete().update()
 }))
 
-const jwt = auth.JWT({issuer:"grafbase", secret: g.env('NEXT_AUTH_SECRET') })
+const jwt = auth.JWT({ issuer: "grafbase", secret: g.env('NEXT_AUTH_SECRET') })
 
 export default config({
   schema: g,
